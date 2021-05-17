@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 <body>
     <h1>Первый Интернет-магазин</h1>
     <p>Пробуем создавать Интернет-магазин на PHP</p>
     <p>Проверка изменений</p>
+    <?php require('dbConnect.php'); ?>
+<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
