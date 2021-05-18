@@ -1,0 +1,17 @@
+.navbar-brand {
+    background-image: url('/img/logo.jpg');
+    background-size: cover;
+    width: 150px;
+    height: 70px;
+}
+
+.site-name {
+    margin: 50px 0;
+}
+
+footer {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
