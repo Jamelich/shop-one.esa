@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Май 20 2021 г., 21:06
+-- Время создания: Май 21 2021 г., 23:59
 -- Версия сервера: 8.0.19
 -- Версия PHP: 7.1.33
 
@@ -29,17 +29,17 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `products` (
   `id` int NOT NULL,
-  `prod_name` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `prod_desc` varchar(512) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `name` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `description` varchar(512) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `price` int NOT NULL,
-  `prod_img` varchar(128) NOT NULL
+  `image` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `products`
 --
 
-INSERT INTO `products` (`id`, `prod_name`, `prod_desc`, `price`, `prod_img`) VALUES
+INSERT INTO `products` (`id`, `name`, `description`, `price`, `image`) VALUES
 (1, 'Ноутбук Acer', 'Описание', 100, '');
 
 -- --------------------------------------------------------
@@ -54,16 +54,16 @@ CREATE TABLE `users` (
   `password` varchar(56) NOT NULL,
   `full_name` varchar(128) NOT NULL,
   `status` int NOT NULL,
-  `e-mail` varchar(56) NOT NULL,
+  `email` varchar(56) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `phone` varchar(12) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `addres` varchar(256) NOT NULL
+  `address` varchar(256) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `users`
 --
 
-INSERT INTO `users` (`id`, `login`, `password`, `full_name`, `status`, `e-mail`, `phone`, `addres`) VALUES
+INSERT INTO `users` (`id`, `login`, `password`, `full_name`, `status`, `email`, `phone`, `address`) VALUES
 (1, 'admin', 'admin', 'Administrator', 1, 'serj-post@mail.ru', '89621415543', 'Адрес');
 
 --
