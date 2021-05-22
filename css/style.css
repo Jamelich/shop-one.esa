@@ -15,3 +15,9 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+.list-reg-log {
+    margin: 0;
+    list-style: none;
+    padding: 0 10px 0 0;
+}
