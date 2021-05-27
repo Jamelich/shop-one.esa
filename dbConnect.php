@@ -10,12 +10,12 @@ $pass = 'SML-Q9G-Sva-d5m'; // пароль
 $pdo = new PDO('mysql:host=' . $host . ';dbname=' . $db, $user, $pass);
 
 // Отправляем запрос в MySQL и получаем специальный ресурс с данными из БД
-$pdoResource = $pdo->query('SELECT id, prod_name FROM products');
+// $pdoResource = $pdo->query('SELECT id, prod_name FROM products');
 
 // Каждый вызов $pdoResource->fetch() возвращает массив с данными строки из БД, новый вызов возвращает данные из слудующей строки
 // тут используется хитрый трюк языка. Цикл будет работать пока переменной $row будет присваивается значение из ресурса. Но как только ресурс вернет null, то это означает, что все строки перебрали и цикл завершается
 
-while ($row = $pdoResource->fetch()) {
-    // выводим на экран данные из бд
-    echo $row['id'] . ' - ' . $row['prod_name'] . '<br>';
-}
+// while ($row = $pdoResource->fetch()) {
+//     // выводим на экран данные из бд
+//     echo $row['id'] . ' - ' . $row['prod_name'] . '<br>';
+// }
